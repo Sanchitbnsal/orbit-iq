@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 import { Button } from "@/components/ui/button";
-import { 
+import {
   Github,
   Palette
 } from "lucide-react";
@@ -57,7 +57,7 @@ export default function Home() {
           <div className="flex items-center space-x-2">
             <Button variant="ghost" size="icon" asChild>
               <a
-                href="https://github.com/2GODOFDEATH4/OrbitIQ"
+                href="https://github.com/Sanchitbnsal/orbit-iq"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,7 +72,7 @@ export default function Home() {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
                 {themes.map((t) => (
-                  <DropdownMenuItem 
+                  <DropdownMenuItem
                     key={t.value}
                     onClick={() => handleThemeChange(t.value)}
                     className={theme === t.value ? "bg-primary/10" : ""}
